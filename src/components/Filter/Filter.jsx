@@ -3,7 +3,6 @@ import { getFilter } from "redux/selectors";
 import { filterContact } from "redux/contactsSlice";
 import PropTypes from 'prop-types';
 
-
 const Filter = () => {
     const dispatch = useDispatch();
     const filter = useSelector(getFilter);

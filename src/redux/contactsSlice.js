@@ -2,12 +2,6 @@ import { createSlice } from '@reduxjs/toolkit';
 import { persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
-// import type { PayloadAction } from '@reduxjs/toolkit';
-
-// export interface CounterState {
-//   value: number;
-// }
-
 const initialState = {
   contacts: [
     { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
@@ -51,8 +45,5 @@ export const contactsReducer = persistReducer(
   contactsSlice.reducer
 );
 
-// // Action creators are generated for each case reducer function
 export const { addContact, deleteContact, filterContact } =
   contactsSlice.actions;
-
-// export default contactsSlice.reducer;
