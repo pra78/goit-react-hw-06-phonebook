@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { ContactListStyled, ListItem } from './ContactList.styled';
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
@@ -28,15 +27,6 @@ const ContactList = () => {
           ))}
         </ContactListStyled>
     )
-}
-
-ContactList.propTypes = {
-    contacts: PropTypes.arrayOf(PropTypes.shape({
-        name: PropTypes.string,
-        number: PropTypes.string,
-        id: PropTypes.string,
-    })),
-    filter: PropTypes.string,
 }
 
 export default ContactList;
